@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.redli.bitacoraliauaem.ProfileActivity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido Alexis Ayala"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Fecha de ingreso:"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/etdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="DD-MM-YYYY"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Hora de ingreso:"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/etHini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="00:00"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Tiempo transcurrido:"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <Chronometer
+        android:id="@+id/simpleChronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/btEndSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terminar sesion" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Ultima sesion"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:text="Fecha"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:text="Hora Entrada"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:text="Hora Salida"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:text="Duracion"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:text="DD-MM-YYYY"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/tvHoraIni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:text="HH:mm"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/tvHoraFin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:text="HH:mm"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:text="mm:ss"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+    </LinearLayout>
+
+</LinearLayout>
